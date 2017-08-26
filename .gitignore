@@ -1,0 +1,30 @@
+# 忽略目录和文件
+.settings/
+bin/
+.classpath
+.project
+.metadata/
+.recommenders/
+# 允许的目录
+#!/basisStruct
+#!basisStruct/src/*
+
+#!/workspace
+
+#!/workspace/exercise
+#!/workspace/exercise/src
+
+#!/workspace/graph
+#!/workspace/graph/src
+
+#!/workspace/hash_table
+#!/workspace/hash_table/src
+
+#!/workspace/set
+#!/workspace/set/src
+
+#!/workspace/tree
+#!/workspace/tree/src
+# 允许的文件
+!README.md
+!.gitignore
