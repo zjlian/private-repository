@@ -54,9 +54,7 @@ public class MaxPQ<T extends Comparable<T>> {
 		return max;
 	}
 	
-
 	public static void main(String[] args) {
-		 
 
 	}
 

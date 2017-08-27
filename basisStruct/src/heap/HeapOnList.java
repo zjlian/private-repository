@@ -79,7 +79,6 @@ public class HeapOnList<T extends Comparable<T>> {
 		pq.push("K");
 		pq.push("B");
 		pq.push("C");
-		
 		int len = pq.length();
 		for(int i = 1; i <= len; i++) {
 			stdio.print(pq.pop());
