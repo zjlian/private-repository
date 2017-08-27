@@ -33,6 +33,18 @@ public class LinkedQueue<T> {
 		
 		return Elem;
 	}
+
+	public int length(){
+		return len;
+	}
+	public String toString() {
+		String s = " ";
+		for(Node x = front.next; x != null; x = x.next) {
+			s += x.data + " ";
+		}
+		stdio.stdio.println(s);
+		return s;
+	}
 	
 	public static void main(String[] args) {
 		LinkedQueue<String> s = new LinkedQueue<String>();
@@ -42,7 +54,8 @@ public class LinkedQueue<T> {
 		s.enqueue("tsst");
 		s.enqueue("tttt");
 		s.dequeue();
-		
+
+		s.toString();
 
 	}
 

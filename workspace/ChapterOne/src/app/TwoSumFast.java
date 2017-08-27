@@ -17,9 +17,9 @@ public class TwoSumFast {
 		return cut;
 	}
 
-	public static void main(String[] args) {
-		int[] a = args[0]
-		stdio.println(TwoSumFast.count(a));
-	}
+	//public static void main(String[] args) {
+	//	int[] a = args[0]
+	//	stdio.println(TwoSumFast.count(a));
+	//}
 
 }

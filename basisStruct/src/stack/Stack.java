@@ -31,6 +31,12 @@ public class Stack<T> {
 		top--;
 		return tmp;
 	}
+	public T peek() {
+		if(this.isEmpty()) {
+			throw new IndexOutOfBoundsException("栈已空");
+		}
+		return data[top];
+	}
 	public int length() {
 		return top + 1;
 	}

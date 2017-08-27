@@ -11,7 +11,8 @@ public class LinkedStack<T> {
 	private Node top; 
 	private int len; 
 
-	public LinkedStack() {
+	public LinkedStack() { 
+
 		top = new Node();
 		top.next = null;
 		len = 0;

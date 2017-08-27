@@ -35,7 +35,7 @@ public class FrequencyCounter {
 			if(st.get(word) > st.get(max))
 				max = word;
 		}
-		double enjoy = shit.eatShit();
+		double enjoy = shit.elapsedTime();
 		stdio.println(max + " " + st.get(max));
 		stdio.println("不重复个数 " + distinct);
 		stdio.println("单词总数 " + words);

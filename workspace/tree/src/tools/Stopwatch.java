@@ -1,4 +1,4 @@
-package tool;
+package tools;
 
 public class Stopwatch {
 	private final long start;
