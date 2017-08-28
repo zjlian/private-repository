@@ -5,8 +5,8 @@ import stdio.*;
 public class Evaluate {
 
 	public static void main(String[] args) {
-		Stack<String> ops = new Stack<String>(50);
-		Stack<Double> vals = new Stack<Double>(50);
+		Stack<String> ops = new Stack<String>();
+		Stack<Double> vals = new Stack<Double>();
 		
 		String str = stdio.readLine();
 		

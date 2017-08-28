@@ -1,7 +1,7 @@
-package stack;
+package template;
 import java.util.Iterator;
 
-import stdio.stdio;
+import std.stdio;
 
 public class Stack<T> implements Iterable<T>{
 	private final int DEFAUTO_MAXSIZE = 2;
@@ -48,8 +48,8 @@ public class Stack<T> implements Iterable<T>{
 	
 	private class ReverseArrayIterator implements Iterator<T> {
 		private int i = top;
-		public boolean hasNext() { return i > 0; }
-		public T next() { return data[--i]; }
+		public boolean hasNext() { return i > -1; }
+		public T next() { return data[i--]; }
 		public void remove() {}
 	}
 	

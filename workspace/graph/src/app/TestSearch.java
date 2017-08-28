@@ -2,7 +2,12 @@ package app;
 import std.In;
 import std.stdio;
 import template.Graph;
-
+/*
+ * 测试数据：
+ * http://algs4.cs.princeton.edu/41graph/tinyG.txt
+ * http://algs4.cs.princeton.edu/41graph/mediumG.txt
+ * http://algs4.cs.princeton.edu/41graph/largeG.txt
+ * */
 public class TestSearch {
 	public static void main(String[] args) {
 		Graph G = new Graph(new In(args[0]));
