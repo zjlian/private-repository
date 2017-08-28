@@ -1,5 +1,6 @@
 package template;
 import std.In;
+import std.stdio;
 import template.Bag;
 
 public class Graph {
