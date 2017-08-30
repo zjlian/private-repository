@@ -7,7 +7,7 @@ import template.Graph;
  * 测试数据：
  * http://algs4.cs.princeton.edu/41graph/tinyG.txt
  * http://algs4.cs.princeton.edu/41graph/mediumG.txt
- * http://algs4.cs.princeton.edu/41graph/largeG.txt
+ * http://algs4.cs.princeton.edu/41graph/largeG.txt  //这个数据量太大，没法打印
  * */
 public class TestPaths {
 	public static void main(String[] args) {
