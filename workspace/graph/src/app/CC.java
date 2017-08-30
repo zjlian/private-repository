@@ -1,5 +1,8 @@
 package app;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 import template.Graph;
 
 public class CC {
@@ -27,6 +30,7 @@ public class CC {
 			}
 		}
 	}
+
 	//两个顶点是否连通
 	public boolean connected(int v, int w) 
 	{ return id[v] == id[w]; }
