@@ -13,7 +13,7 @@ public abstract class UF {
 			id[i] = i;
 		}
 	}
-	
+
 	public abstract void union(int p, int q);
 	public abstract int find(int p);
 	

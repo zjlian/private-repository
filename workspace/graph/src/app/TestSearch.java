@@ -14,6 +14,7 @@ public class TestSearch {
 		stdio.print("图创建完成; ");
 		int s =  Integer.parseInt(args[1]);
 		stdio.println("与起点 " + s + " 连通的节点有: ");
+		// DepthFirstSearch | UnionFindSearch
 		DepthFirstSearch search = new DepthFirstSearch(G, s);
 		
 		for(int v = 0; v < G.V(); v++) {
