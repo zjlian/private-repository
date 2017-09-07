@@ -41,5 +41,9 @@ public class ST<Key extends Comparable<Key>, Value> implements Iterable<Pair<Key
 		for(Pair<String, String> p : st) {
 			stdio.print(p.second + " ");
 		}
+		stdio.println();
+		if(st.contains("abb")) {
+			stdio.println("take it boy");
+		}
 	}
 }
