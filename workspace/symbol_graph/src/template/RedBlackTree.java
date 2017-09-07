@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
 
-import tools.stdio;
+import std.stdio;
 
 public class RedBlackTree<T extends Comparable<T>> implements Iterable<T>{
 	//用布尔值来标记节点的红黑色
@@ -37,6 +37,9 @@ public class RedBlackTree<T extends Comparable<T>> implements Iterable<T>{
 	}
 	public T get(T val) {
 		return get(val, root).data;
+	}
+	public boolean contains(T val) {
+		return get(val, root) != null;
 	}
 	public int size() {
 		return size(root);
