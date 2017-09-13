@@ -25,16 +25,47 @@ public class Graph {
 			addEdge(v, w);
 		}
 	}
+	public Graph(Graph g) {
+		Graph copy = g.clone();
+		this.V = copy.V;
+		this.E = copy.E;
+		this.adj = copy.adj;
+	}
 	public int V() { return V; }
 	public int E() { return E; }
 
 	public void addEdge(int v, int w) {
+		if(v == w) return;
+		for(int t : adj(v)) {
+			if(t == w) {
+				return;
+			}
+		}
 		adj[v].add(w);
 		adj[w].add(v);
 		++E;
 	}
+	public boolean hasEdge(int v, int w) {
+		for(int t : adj(v)) {
+			if(t == w) {
+				return true;
+			}
+		}
+		return false;
+	}
 	public Iterable<Integer> adj(int v) 
 	{ return adj[v]; }
+	
+	public Graph clone() {
+		Graph copy = new Graph(this.V);
+		copy.E = this.E;
+		for(int v = 0; v < this.V; v++) {
+			for(int w : this.adj(v)) {
+				copy.adj[v].add(w);
+			}
+		}
+		return copy;
+	}
 	
 	public String toString() {
 		String s = V + " vertices, " + E + " edges\n";
@@ -46,5 +77,10 @@ public class Graph {
 			s += "\n";
 		}
 		return s; 
+	}
+	public static void main(String[] args) {
+		Graph G = new Graph(new In(args[0]));
+		Graph CG = new Graph(G);
+		CG.toString();
 	}
 }	
